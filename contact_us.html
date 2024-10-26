@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header">
+                <header>               
+                        <h1 class="logo">CotE</h1>                                                
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="episodes.html" >Episodes</a></li>
+                        <li><a href="characters.html" class="page">Contact Us</a></li>
+                    </ul>             
+                </header><hr>
+            </div><!-- header -->
+
+        <div class="content">
+            <div class="box1">
+                <h2 class="text"> Contact Us   </h2>
+                <div class="icons">                   
+                    <i class="fa-solid fa-location-dot">  </i><span class="info">&nbsp; 123 Unknown Street, IL 123 Philippines </span><br>
+                    <i class="fa-solid fa-envelope">  </i> <span class="info">&nbsp; unknown@gmail.com</span> <br>
+                    <i class="fa-solid fa-phone">  </i> <span class="info">&nbsp; 123-456-7890</span>
+                </div>
+
+                <div class="icon2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+            </div><!--box1-->
+
+            <div class="box2">
+                <h3 class="text2">Get in Touch</h3>
+                <p class="text3"> Feel free to drop us a message below.</p>
+                <input type="text" placeholder="Enter your Name" id="name"> <br>
+                <input type="email" placeholder="Enter your Email" id="email"> <br>
+                <textarea name="message" id="text" placeholder="Type your message here"></textarea><br>
+                <button> SEND </button>
+                
+            </div><!--box2-->
+
+          
+
+        </div><!--content-->
+
+        <footer></footer>
+    </div><!--container-->
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #dda4a4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display:flex; 
+    height: 80px;
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+    width: 100%;
+}
+
+.logo{
+    font-family: "Arial";
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+
+li{
+    display: inline;
+    
+}
+
+    
+ul{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 130px;
+    font-size: 20px;
+    font-family: "Helvetica";
+}
+
+.page{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.page:hover{
+    color: rgb(255, 221, 244);
+}
+
+header a{
+    text-decoration: none;
+    margin-left: 90px;
+    color: rgb(255, 221, 244);
+}
+
+
+header a:hover{
+    color:white;
+}
+
+
+hr{
+    border: solid 2px rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+.content{
+    display: flex;
+    color: bisque;
+}
+
+.box1{
+    position: absolute;
+    height: 53.2%;
+    width: 24.1%;
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+    padding: 30px;
+    color: bisque;
+    margin-left: 13%;
+    margin-top: 6%;
+    box-shadow: 10px 2px 30px 0.5px rgb(46, 44, 44);
+}
+
+.text{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 23px;
+}
+
+i{
+    margin-bottom: 40px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.info{
+    font-size: 13px;
+}
+
+.icon2{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.box2{
+    height: 488px;
+    width: 60%;
+    background-image: linear-gradient(to top left,#ee5454, #cf0e8f);
+    margin-left: 23%;
+    text-align: right;
+    margin-top: 3% ;
+    box-shadow: 10px 5px 30px 2px rgb(46, 44, 44);
+    margin-bottom: 70px;
+
+}
+
+.text2{
+    margin-top: 35px;
+    font-size: 32px;
+    margin-right: 35%;
+}
+
+.text3{
+    margin-right: 25%;
+    margin-top: 22px;
+    margin-bottom: 21px;
+    font-size: 16px;
+}
+
+input{
+    height: 42px;
+    width: 50%;
+    margin-bottom: 12px;
+    margin-right: 7%;
+    padding-left: 10px;
+    background-color: hwb(319 91% 0%);
+    border: 1px solid black;
+}
+
+#text{
+    height: 120px;
+    width: 49%;
+    margin-right: 7%;
+    padding: 10px;
+    background-color: hwb(319 91% 0%);
+}
+
+
+::placeholder{
+    padding-left: 3px;
+    font-size: 15px;
+} 
+
+button{
+    padding: 9px 34px;
+    font-weight: bold;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 42%;
+    letter-spacing: 2px;
+    color: rgb(19, 19, 19);
+    background-image: linear-gradient(to left,hsl(313, 100%, 62%), #cf0e8f);
+    
+}
+
+input:hover{
+    background-color: rgb(255, 247, 253);
+    border: 2px solid black;
+}
+
+#text:hover{
+    background-color: rgb(255, 247, 253);
+    border: 2px solid;
+}
+
+
+button:hover{
+    border: 2px solid;
+}
+
+
+footer{
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+    height: 90px;
+    color: rgb(240, 192, 224);
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+</style>

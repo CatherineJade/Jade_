@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="Layout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>               
+                    <h1 class="logo">CotE</h1>                                                
+                <ul>
+                    <li><a href="home.html" class="page">Home</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="episodes.html">Episodes</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="sign up.html" class="sgn">Sign In</a></li>
+                </ul>             
+            </header><hr>
+        </div><!-- header -->
+        
+        <div class="body">
+                <div class="info">
+                <h1 class="title">CLASSROOM OF THE ELITE</h1>
+                <p>Classroom of the Elite is a psychological thriller set in a prestigious high school where students are ranked by merit. The story follows Kiyotaka Ayanokouji of Class D, a group of misfits navigating a ruthless system where intelligence and manipulation are key to rising through the ranks.</p>
+                
+               
+                    <input type="button" value="Watch Now">
+               
+                </div><!-- info -->
+                
+                <div class="img">
+                    <img src="jade.jpeg">
+                </div>
+        </div><hr><!-- body -->
+        
+        <footer>
+            
+        </footer>
+        
+    </div><!-- container -->
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    display:flex; 
+    height:80px;
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+}
+
+.logo{
+    font-family: "Arial";
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+
+li{
+    display: inline;
+    
+}
+
+    
+ul{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 130px;
+    font-size: 20px;
+    font-family: "Helvetica";
+}
+
+.page{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+
+}
+
+.page:hover{
+    color: rgb(255, 221, 244);
+}
+
+a{
+    text-decoration: none;
+    margin-left: 90px;
+    color: rgb(255, 221, 244);
+}
+
+a.sgn{
+    margin-left:200px;
+    border: solid 3px;
+    padding: 9px 19px;
+    border-radius: 50px;
+}
+
+hr{
+    border: solid 3px rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-image: url(bck.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+.header, .body{
+    margin:0;
+    padding: 0; 
+}
+
+.title, .p{
+    margin:0;
+}
+
+img{
+    width:400px;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border: solid 2px;
+    margin-right: 70px;
+    box-shadow: 2px 3px 15px 13px;
+}
+
+.title{
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 60px;
+    letter-spacing:5px;
+    margin-top: 50px;
+    font-weight:bolder;
+    -webkit-text-stroke: 1px #ff5757;
+}
+
+p{
+    font-family: "Helvetica";
+    font-weight: bold;
+    text-align: justify;
+    margin: 20px 60px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+input{
+    margin-top: 30px;
+    padding: 16px 60px;
+    font-size: 30px;
+    font-family: "Arial";
+    font-weight: bold;
+    border: solid 3px black;
+    border-radius: 40px;
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+    margin-left: 270px;
+    margin-bottom: 40px;
+    color: rgb(255, 221, 244);
+}
+
+footer{
+    background-image: linear-gradient(to top left, #9b0e6c, #DD4C4C);
+    height: 68px;
+    width: 100%;
+    display: block;
+}
+
+
+a:hover{
+    color:white;
+}
+
+input:hover{
+    color:rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+header{
+    height: 50px;
+    background-color: #dd4c4c;
+}
+
+ 
+hr{
+    border: solid 2px rgb(0, 0, 0);
+    width: 99.2%;
+}
+
+
+ul{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.logo{
+    font-size: 5vw;
+    margin-left: 10px;
+    width: 20px;
+}
+
+a{
+    font-size: 2.5vw;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+a.sgn{
+    margin-left: 5px;
+    border: solid 2px;
+    padding: 5px 15px;
+}
+
+.title{
+    font-size: 4vw;
+    -webkit-text-stroke: 0.5px #ff5757;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+p{
+    font-size: 2vw;
+    width: 80%;
+    margin-left: 35px;
+}
+
+input{
+    font-size: 2vw;
+    float: left;
+    padding: 10px;
+    width: 60%;
+    margin: 0;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+img{
+    width:70%;
+    height: 60%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border: solid 5px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+a:hover{
+    color: white;
+}
+}
+</style>

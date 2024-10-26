@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        &nbsp;
+        <div class="back"><a href="sign up.html"><i class="fa-solid fa-arrow-left-long">  back</i></a></div>
+        <div class="content">
+        <img src="7.png">
+        <div class="form">
+            <div><h1 class="head">LOGIN</h1></div>
+            <label for="name">Username or Email Address</label><br>
+            <input type="text" id="name" placeholder="Username or Email Address"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Password">
+            <div class="fp">Forgot Password?</div>
+            <div class="button">
+                <input type="button" value="Login">
+            </div>
+                <div class="a">&mdash;&mdash;&mdash;  or login with  &mdash;&mdash;&mdash;</div>         
+            
+            <div class="soc">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>           
+
+            <h5>Dont't have an account?<span class="log"> <a href="sign up.html"> Sign Up</a></span></h5>
+        </div><!--Form-->
+
+        
+    </div>
+        
+    </div><!--container-->
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+
+    .container{
+        background-image: linear-gradient(to top left, #74004E, #DD4C4C);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .back i{
+        font-size: 17px;
+        margin-top: 5px;
+        margin-left: 35px;
+        width: 95px;
+        color: #031f30;
+    }
+
+    .form{
+        width: 460px;
+        height: 500px;
+        border: solid 2px black;
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-bottom: 58px;
+        background-color: #EDDEDC;
+        border-radius: 23px;
+        box-shadow: 5px 10px 10px 5px rgb(35, 24, 24);
+    }
+
+    .head{
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .a{
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 50px;
+        font-family: sans-serif;
+    }
+
+    input{
+        margin: 5px 50px 18px;
+        width: 75%;
+        height: 30px;
+        border-radius: 5px;
+        border: solid 1px;
+        background-color: #F4F4F4;
+    }
+
+    #password{
+    margin-bottom: 14px;
+    }
+
+    #name, #password{
+        padding-left: 7px;
+        font-size: 13px;
+    }
+
+    .fp{
+        font-size: 15px;
+        font-weight: bold;
+        color: #033E60;
+        margin-left: 60%;
+        width: 200px;
+    }
+
+    .button{
+        text-align: center;
+    }
+
+    .button input{
+        background-color: #3C92C4;
+        width: 60%;
+        height: 38px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: solid 1px black;
+        border-radius: 50px;
+        margin: 15px;
+    }
+
+    .soc{
+        margin-top: 20px;
+        display: flex;
+        width: 150px;
+        font-size: 29px;
+        margin-left: 37%;
+    }
+
+    h5{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    }
+
+    .log a{
+        text-decoration: none;
+        color: #033E60;
+    }
+
+    input:hover{
+    border: 3px solid rgb(12, 12, 62);
+    }
+
+    .back:hover{
+        text-decoration: underline;
+    }
+
+    .fp:hover{
+        text-decoration: underline;
+    }
+
+    .log:hover{
+        text-decoration: underline;
+    }
+
+        
+    img{
+        height: 90%;
+        width: 35.2%;
+        margin-left: 80px; 
+    }
+
+    .content{
+        display: flex;
+    }
+
+    @media screen and (max-width: 1000px){
+        *{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .container{
+        position: fixed;
+        }
+
+        .form{
+            width: 72%;
+            height: 500px;
+            margin-left: 15%;
+            margin-bottom: 50%;
+            margin-top: 19px;
+        }
+
+
+        .head{
+            font-size: 5vw;
+        }
+
+        label{
+            font-size: 2.5vw;
+            margin-left: 40px;
+        }
+
+        input{
+            margin-left: 40px;
+        }
+
+        #name, #password{
+        font-size: 2vw;
+        }
+
+        .fp{
+            font-size: 2.2vw;
+            margin-left: 43px;
+        }
+
+        h5{
+            font-size: 2.5vw;
+        }
+
+        .soc{
+            font-size: 4vw;
+            width: 120px;
+        }
+        img{
+            display: none;
+        }    
+    }
+
+</style>
